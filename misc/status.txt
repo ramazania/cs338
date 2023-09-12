@@ -1,3 +1,3 @@
 Ali Ramazani
 
-I am currently waiting to get the VMware Software License Key and then I will install Kali Linux.
+I was able to install Kali linux on the VMware and activate the subscription. The process was a little long but I managed to get through and set up everything for the course. 
