@@ -1,0 +1,10 @@
+Personal quick-reference guide
+
+- ifconfig: displays current network configuration info.
+- hostname -I
+- ip a
+- ping <hostname>: find the ip address for a given hostname
+- traceroute <hostname>
+- dig <hostname>
+- nslookup <ip address>: find the host name for a given ip address
+- ssh: 
