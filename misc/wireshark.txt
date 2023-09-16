@@ -1,0 +1,42 @@
+Ali Ramazani
+
+===== DAYTIME =====
+
+Question 1:
+
+-- 1   192.168.112.128   129.6.15.28       TCP   [SYN] Seq=0 Win=64240 Len=0 MSS=1460 SACK_PERM TSval=2960028275 TSecr=0 WS=128 
+
+-- 2   129.6.15.28	 192.168.112.128   TCP   [SYN, ACK] Seq=0 Ack=1 Win=64240 Len=0 MSS=1460
+
+Question 2: Port 13
+
+Question 3: The client needs a port number to establish a connection to the server and be able to communicate. 
+
+Question 4: 4	129.6.15.28	192.168.112.128	         DAYTIME	DAYTIME Response
+
+Question 5: Daytime Protocol full content: \n60202 23-09-15 20:24:57 50 0 0 660.3 UTC(NIST) * \n
+
+Question 6: Client requests connection by sending SYN (synchronize) message to the server.
+
+Question 7: ACK is a message that the server/client sends to acknowledge that it has recieved the message.
+
+Question 8: FIN means finish and it's sent to request for connection termination. 
+
+Question 9: The daytime server initiated the closing of the TCP connection because it was the first one to send the FIN message. 
+
+
+===== HTTP =====
+
+Question 1: There were 67 frames of which around 61 used TCP protocol. 
+
+Question 2: 37	0.233645268	192.168.112.128	    45.79.89.123	HTTP	416	GET /index.html HTTP/1.1 
+
+Question 3: 43	0.409539377	192.168.112.128	    45.79.89.123	HTTP	385	GET /jeff_square_head.jpg HTTP/1.1 
+
+
+===== QUESTIONS =====
+1. How do you interpret the bytes in the wireshark?
+2. What are the characters which include dots and some alphabet letters right next to the bytes? 
+3. What does MSS mean in the info section?
+
+
