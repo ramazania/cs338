@@ -1,0 +1,290 @@
+Ali Ramazani
+
+Sources:
+- https://datatracker.ietf.org/doc/html/rfc8017#appendix-A
+- https://www.thedigitalcatonline.com/blog/2018/04/25/rsa-keys/
+
+
+1. -----BEGIN RSA PRIVATE KEY-----
+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
+-----END RSA PRIVATE KEY-----
+
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDaf0Zd5OyLtmb+XzTPdtm8vTtwrHkLCFpf4dwR8eyVsZPFFb8DS1tdbPUSPjgHkmiN/sPNVZfwoBsV8oNdzPdFU8eXutWl+l1KwvO1DXjzhH0BHizPS1PvdrJgrsnCcxHGzU1dh5q9iD59EXQnRjJwTsYSpoTNoG+XESsvNokPZPVc2PT1rJH0wuBGOA+yH4Dw8w8DXn9CH45mfCCg5HMNySH86St8LeG7+XVlVfkd8mcq5ZSOA0wRjmmeHdYR6O4xhbUoBgRM+ZOnqkeNWgdFoJJs6rri3JkbWhR2bv2ArzpS3CKCkAsZNO5B88CUkWEVgZcXVN5p7p+eCo3qcokuVdKZM4K+t42ERHv9xr67JSdqQLH6GfFgQUlIMBNcDLreCvqgG68HY1oogBEOn+RIseLMCnVPeNEL8jj3VOIcepcixhID5UOFtF0Sc3SaX/e6/E+geBOQyGzZ1JrpMF3b/cDiqybZtvwuemSwDP7D0EnbYALkuMAHoeaWFPfWcT8= ramazania@LAPTOP-F7UE5P2T
+converting the above ssh-rsa key to PEM format:
+
+-----BEGIN PUBLIC KEY-----
+MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEA2n9GXeTsi7Zm/l80z3bZ
+vL07cKx5CwhaX+HcEfHslbGTxRW/A0tbXWz1Ej44B5Jojf7DzVWX8KAbFfKDXcz3
+RVPHl7rVpfpdSsLztQ1484R9AR4sz0tT73ayYK7JwnMRxs1NXYeavYg+fRF0J0Yy
+cE7GEqaEzaBvlxErLzaJD2T1XNj09ayR9MLgRjgPsh+A8PMPA15/Qh+OZnwgoORz
+Dckh/OkrfC3hu/l1ZVX5HfJnKuWUjgNMEY5pnh3WEejuMYW1KAYETPmTp6pHjVoH
+RaCSbOq64tyZG1oUdm79gK86UtwigpALGTTuQfPAlJFhFYGXF1Teae6fngqN6nKJ
+LlXSmTOCvreNhER7/ca+uyUnakCx+hnxYEFJSDATXAy63gr6oBuvB2NaKIARDp/k
+SLHizAp1T3jRC/I491TiHHqXIsYSA+VDhbRdEnN0ml/3uvxPoHgTkMhs2dSa6TBd
+2/3A4qsm2bb8LnpksAz+w9BJ22AC5LjAB6HmlhT31nE/AgMBAAE=
+-----END PUBLIC KEY-----
+
+2. ---------------- Private Key --------------- 
+3. Private key file should contain the following items:
+    - version: version number
+    - modulus: the RSA modulus n.
+    - publicExponent: the RSA public exponent e.
+    - privateExponent: the RSA private exponent d.
+    - prime1: the prime factor p of n.
+    - prime2: the prime factor q of n.
+    - exponent1: d mod (p - 1).
+    - exponent2: d mod (q - 1).
+    - coefficient: the CRT coefficient q^(-1) mod p.
+    - OtherPrimeInfos: contains the information for the additional primes in order.
+
+4. I used the Lapo Luchini's ASN.1 decoder to decode the private key file. 
+   I uploaded the private key file and hit decode and I got the following results:
+
+    PrivateKeyInfo SEQUENCE (9 elem)
+        version Version INTEGER 0
+        privateKeyAlgorithm AlgorithmIdentifier [?] INTEGER (3072 bit) 495852521116107222356341672622950173466711064030940015912835606839223…
+        privateKey PrivateKey [?] INTEGER 65537
+        INTEGER (3072 bit) 485668693760227637979705026280418612158042783636877955375754618591278…
+        INTEGER (1536 bit) 225680031784415615557713421282391512119271365343321265825116009261176…
+        INTEGER (1536 bit) 219714840163518812356078337696711619595363155305287644116610303104471…
+        INTEGER (1536 bit) 173489565914378795602684893687965069687062432783952098715766203252930…
+        INTEGER (1535 bit) 103130566139892971995936369138444586142065724453381425886372066833998…
+        INTEGER (1532 bit) 774183924850947820203602021253788680431489355738115995374635932453855…
+
+
+
+5. Meaning/Name of integers:
+    - version:          Version INTEGER 0
+                        offset: 4
+                        DER encoding: 02 01 00
+                           - integer tag: 02 
+                           - length: 01 
+                           - hex value: 0x00
+  
+    - modulus:          INTEGER (3072 bit) 495852521116107222356341672622950173466711064030940015912835606839223…
+                        offset: 7
+                        DER encoding:   
+                            02  82 01 81 00 DA 7F 46 5D
+                            E4 EC 8B B6 66 FE 5F 34  CF 76 D9 BC BD 3B 70 AC
+                            79 0B 08 5A 5F E1 DC 11  F1 EC 95 B1 93 C5 15 BF
+                            03 4B 5B 5D 6C F5 12 3E  38 07 92 68 8D FE C3 CD
+                            55 97 F0 A0 1B 15 F2 83  5D CC F7 45 53 C7 97 BA
+                            … skipping 288 bytes …
+                            26 D9 B6 FC 2E 7A 64 B0  0C FE C3 D0 49 DB 60 02
+                            E4 B8 C0 07 A1 E6 96 14  F7 D6 71 3F
+
+                            - integer tag: 02 
+                            - length: 82 
+                            - hex value: 01 81 00 DA 7F 46 5D ...
+   
+    - publicExponent:   INTEGER 65537
+                        offset: 396
+                        DER encoding: 02 03 01 00 01
+                            - integer tag: 02
+                            - length: 03
+                            - hex value: 0x01 00 01
+   
+    - privateExponent:  INTEGER (3072 bit) 485668693760227637979705026280418612158042783636877955375754618591278…
+                        offset: 401
+                        DER encoding:
+                            02 82 01 81 00 D6 02  79 AA B7 F2 14 FA 48 B0
+                            F8 11 A2 EF 37 5F 8D 3D  AE 23 D0 BF 44 A4 38 6B
+                            E2 00 D5 A3 B4 0F 65 BC  51 8B 71 2F 9B 42 CB D8
+                            D2 D0 8C 52 A6 4D B0 5F  0B EB 8F DD AD 7B 34 6C
+                            6F C7 C9 D5 5B 90 D4 F9  97 1D 11 EC 6B 68 7B 34
+                            … skipping 288 bytes …
+                            4D AF 96 28 10 B6 3D 65  E6 EE DE 91 A7 84 98 F3
+                            2F 60 B9 BA 2E C1
+                            
+                            - integer tag: 02
+                            - length: 82
+                            - hex value: 0x01 81 00 D6 02 ...
+
+   
+    - prime1:           INTEGER (1536 bit) 225680031784415615557713421282391512119271365343321265825116009261176…
+                        offset: 790
+                        DER encoding:
+                            02 81  C1 00 EF B2 07 E9 5B 83
+                            2A BF EF 02 0D B8 42 93  07 74 66 70 04 F0 0E 4F
+                            2C 18 13 51 C6 62 4C 80  DE E2 C3 BE 1D E5 45 70
+                            1F 85 A9 4F 9E 17 E3 1B  62 85 A9 52 BF 06 32 32
+                            50 72 D9 6B 04 F1 7D F8  0F 6E 9A 87 73 88 32 68
+                            … skipping 96 bytes …
+                            5F 4B 08 2A 61 78 5D 84  98 0D EB B0 30 6D 82 66
+                            EC AC 07 DE B3 7A 1E FB  C2 9F
+
+                            - integer tag: 02
+                            - length: 81
+                            - hex value: 0x02 81  C1 00 EF B2 07 E9 5B 83 ...
+    
+    - prime2:           INTEGER (1536 bit) 219714840163518812356078337696711619595363155305287644116610303104471…
+                        offset: 986
+                        DER encoding:
+                            02 81 C1 00 E9 5C
+                            1A E6 3D F6 C3 2E FC 4C  FE FF A4 D9 19 64 AC 7B
+                            13 55 40 F6 B4 E5 B5 F5  BB D2 0B E0 14 FF 8B 8A
+                            1B E9 07 A5 7F 35 B0 33  00 E8 02 15 F0 72 99 A2
+                            32 DD C3 26 21 9E BF FC  FB 1C AF 77 15 9B 53 B8
+                            … skipping 96 bytes …
+                            B9 8E 2C CE C1 96 05 64  6C 41 A9 0A B5 46 8F 96
+                            B1 13 F6 DB B5 B3 89 91  9C E2 A2 EC 6D 61
+
+                            - integer tag: 02
+                            - length: 81
+                            - hex value: 0x 02 81 C1 00 E9 5C ...
+
+    - exponent1:        INTEGER (1536 bit) 173489565914378795602684893687965069687062432783952098715766203252930…
+                        offset: 1182
+                        DER encoding:
+                            02 81
+                            C1 00 B8 43 87 5B 78 93  3C 30 F2 7F 04 A7 0A DE
+                            D6 93 40 10 8B 6B 33 C4  DF 63 DE AE 35 B0 E9 99
+                            04 3F 15 35 38 EC 40 D6  32 15 61 94 28 37 BA CA
+                            19 92 21 19 D0 69 E5 FA  D1 E7 88 86 81 F5 57 DE
+                            73 96 96 4A DC A0 EE 07  39 50 94 E7 02 7C 67 09
+                            … skipping 96 bytes …
+                            15 CF 55 C9 4B 61 54 26  E5 78 56 50 78 6E C0 14
+                            D0 87
+
+                            - integer tag: 02
+                            - length: 81
+                            - hex value: 0xC1 00 B8 43 87 5B 78 93 ...
+
+
+    - exponent2:        INTEGER (1535 bit) 103130566139892971995936369138444586142065724453381425886372066833998…
+                        offset: 1378
+                        DER encoding:
+                            02 81 C0 6D 89 08  2F 4E A2 87 57 84 A1 F7
+                            87 B3 AF 1B D6 3F 87 BD  B9 64 B6 E8 8E 72 6C 97
+                            EE AE 18 4E 82 EC D2 B4  EB 1A E5 B9 E2 4F 84 81
+                            46 65 C4 3A 8A F0 46 4C  2D FF AD E4 56 09 B4 0B
+                            82 99 72 02 38 58 81 F3  9E B6 92 95 05 1C 22 1C
+                            … skipping 96 bytes …
+                            F7 B4 0B 0C AF C4 32 6D  87 FB 75 81 C2 76 2E 5D
+                            3F 9C 4D F1 C1
+
+                            - integer tag: 02
+                            - length: 81
+                            - hex value: 0x02 81 C0 6D 89 08  2F 4E ...
+
+
+    - coefficient:      INTEGER (1532 bit) 774183924850947820203602021253788680431489355738115995374635932453855…
+                        offset: 1573
+                        DER encoding: 
+                            02 81 C0  08 38 FE 4F FC B0 61 E5
+                            31 DB 09 BB EF 58 40 7D  74 99 C6 FF 4F 39 6C C3
+                            DD 1D 5C D0 E3 BE 1F FD  FF D0 CD 2A EB 9E BA 5D
+                            B1 55 40 9E 45 AD AB 72  C2 71 A7 8B DC F6 1A 0C
+                            B8 2E 5B ED AF 1E 6E 70  F6 49 B8 E4 98 81 F1 7D
+                            … skipping 96 bytes …
+                            3C CE ED DB D8 FA 76 97  70 16 9B AC 8C CD 6E 02
+                            5A 65 B1 CF 89 EE AC 29
+
+                            - integer tag: 02
+                            - length: 81
+                            - hex value: 0xC0  08 38 FE 4F FC B0 61 E5
+              
+
+
+6. ---------------- Public Key ----------------
+
+7. The id_rsa_homework.pub should contain the following items:
+    - modulus           INTEGER,  -- n
+    - publicExponent    INTEGER   -- e
+
+    I converted the id_rsa_homework.pub into PEM format in order to decode it.
+    I pasted the contents of the file into Lapo Luchini's ASN.1 decoder and hit decode and I got the following results:
+
+    EncryptedPrivateKeyInfo SEQUENCE (2 elem)
+        Offset: 0
+        Length: 4+418
+        (constructed)
+        Value:
+        (2 elem)
+        encryptionAlgorithm AlgorithmIdentifier SEQUENCE (2 elem)
+            algorithm OBJECT IDENTIFIER 1.2.840.113549.1.1.1 rsaEncryption (PKCS #1)
+            parameters ANY NULL
+        encryptedData EncryptedData [?] BIT STRING (3184 bit) 001100001000001000000001100010100000001010000010000000011000000100000…
+            SEQUENCE (2 elem)
+            INTEGER (3072 bit) 495852521116107222356341672622950173466711064030940015912835606839223…
+            INTEGER 65537
+
+   
+    - modulus:          INTEGER (3072 bit) 495852521116107222356341672622950173466711064030940015912835606839223…
+                        offset: 28
+                        DER encoding:
+                            02 82 01 81
+                            00 DA 7F 46 5D E4 EC 8B  B6 66 FE 5F 34 CF 76 D9
+                            BC BD 3B 70 AC 79 0B 08  5A 5F E1 DC 11 F1 EC 95
+                            B1 93 C5 15 BF 03 4B 5B  5D 6C F5 12 3E 38 07 92
+                            68 8D FE C3 CD 55 97 F0  A0 1B 15 F2 83 5D CC F7
+                            45 53 C7 97 BA D5 A5 FA  5D 4A C2 F3 B5 0D 78 F3
+                            … skipping 288 bytes …
+                            D0 49 DB 60 02 E4 B8 C0  07 A1 E6 96 14 F7 D6 71 3F
+
+                            - integer tag: 02
+                            - length: 82
+                            - hex value: 0x 01 81 00 DA 7F 46 5D E4 EC 8B ...
+    
+    
+    - publicExponent:   INTEGER 65537
+                        offset: 417
+                        DER encoding: 02 03 01 00 01 
+                        - integer tag: 02
+                        - length: 03
+                        - hex value: 0x 01 00 01
+    
+
+
+8. ---------------- Sanity Check ---------------
+
+9.  Both files have the same publicExponent: e = 65537 and modulus n: INTEGER (3072 bit). 
+    Unfortunatly, I couldn't do a sanity check on for example, does e*d mod lambda(n) = 1? 
+    This is becuase the values are so large that I can't even get the full number. 
+    Th tool that I used to decrypt only shows part of the value that I can copy. 
+    It shows … skipping 288 bytes … which means there are a lot more than what I can see.
+    Even if I could copy the full numbers, my computer probably wouldn't be able to compute such large numbers.
+
+
+
+
+
+
+
