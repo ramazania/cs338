@@ -1,0 +1,89 @@
+Ali Ramazani
+
+Scenario 1:
+- Alice and Bob use Diffie-Hellman to agree on a shared secret key K
+- Alice encrypts the message using the AES algorithm in CBC mode: C = AES(K, M) 
+- Alice sends the cipher text C to Bob
+- Bob decrypts the cipher text: M = AES_D(K, C) 
+
+This method works because Alice and Bob agreed on a shared secret using Diffie-Helman.
+Assuming AITM is impossible in this scenario, Eve is not able to read the message because 
+she doesn't have the shared key and she can't temper the communication between Alice and Bob.
+As a result, Bob recives the original cipher text and uses his shared key to decrypt it. 
+
+Scenario 2:
+- Alice and Bob use Diffie-Hellman to agree on a shared secret key K
+- Alice computes the hash value H(M) = SHA-256(M)
+- Alice then uses her private key S_A and computes the digital signature: Sig_A = E(S_A, H(M))
+- Alice sends both the long message M and the digital signature Sig_A to Bob: M || Sig_A
+- Bob verifies the digital signature using Alice's public key P_A:
+	- Bob computes H(M) from the received message M.
+	- Bob verifies the signature by checking if E(P_A, Sig_A) equals H(M)
+
+If the verification succeeds, it means the message M has not been tampered with, as the hash value matches the one signed by Alice. 
+If Mal attempts to modify the message during transmission, the digital signature will not match, and Bob will detect the change.
+
+Scenario 3:
+- Alice and Bob use Diffie-Hellman to agree on a shared secret key K
+- Alice computes the hash value H(M) = SHA-256(M)
+- Alice uses her private key S_A and computes the digital signature Sig_A = E(S_A, H(M))
+- Alice encrypts the contract message M using the symmetric encryption algorithm AES with the shared secret key K in CBC mode: C = AES(K, M)
+- Alice sends both the ciphertext C and the digital signature Sig_A to Bob
+- Bob receives the ciphertext C and the digital signature Sig_A
+- Bob computes the original message M = AES_D(K, C)
+- Bob verifies the digital signature using Alice's public key P_A:
+	- Bob computes H(M) from the received message M
+	- Bob verifies the signature by checking if E(P_A, Sig_A) equals H(M)
+
+If the decryption of the ciphertext is successful and the verification of the digital signature is valid, 
+Bob can be confident that the contract message was sent by Alice and has not been tampered with during transmission. 
+Meanwhile, Eve, who may eavesdrop on the communication, only sees the ciphertext C, which is computationally infeasible to decrypt without the shared secret key K.
+Therefore, the confidentiality and authenticity of the contract message are ensured.
+
+Scenario 4:
+
+- Claim 1: 
+Alice could claim that the contract she initially sent to Bob (C') was tampered with during transmission. 
+She might argue that hackers intercepted the contract while it was in transit and altered its contents before sending it to Bob. 
+She can prove this claim by providing an evidence of data breach. 
+
+- Claim 2: 
+Alice could claim that Bob made unauthorized modifications to the contract (C') after receiving it. 
+She might aruge that Bob due to his self-interest altered the terms or content of the contract before appending his digital signature to it (Sig). 
+She demonstrate a history of contentious contract negotiations.
+
+- Claim 3: 
+Alice might claim that someone obtained access to her private key and used it to create a fraudulent signature on a different contract. 
+She can prove unauthorized access to her private key or if there is evidence of her digital signature being used inappropriately.
+
+- Senario 5:
+- Alice obtains Cert_B which includes Bob's public key and the CA's digital signature
+- Alice verifies the authenticity of Cert_B using the CA's public key (P_CA), which she has
+- Alice computes the hash of Cert_B: H(Cert_B)
+- Alice checks if E(P_CA, Sig_CA) equals H(Cert_B). If they match, the certificate is valid
+- If the certificate verification is successful, Alice extracts Bob's public key (P_B) from Cert_B
+- Alice can now securely send her long message to Bob by encrypting it with P_B using public-key encryption (E(P_B, M)). 
+  This ensures that only Bob, with access to his corresponding private key, can decrypt and read the message
+- If Alice wants to provide Bob with confidence that the message indeed comes from her, 
+  she can sign the message with her private key (S_A) and include her digital signature along with the message
+
+By following these steps, Alice can send a message to Bob securely, even when the assumption of everyone having everybody else's correct public keys no longer holds.
+The use of certificates issued by a trusted CA helps establish the authenticity of Bob's public key, and Alice can use this authenticated key to communicate securely with Bob.
+
+- Scenario 6:
+- Possessing the certificate (Cert_B) only verifies that Bob has the public key (P_B) associated with it, but it doesn't guarantee that Bob has exclusive access to the corresponding private key (S_B)
+- To convince Alice that Bob has the S_B that corresponds to the P_B in Cert_B, they can perform a challenge-response protocol as follows:
+	- Alice generates a random number and sends it to Bob
+	- Bob signs the with his private key S_B and sends it back to Alice
+	- Alice verifies the response by using Bob's public key P_B from Cert_B to check the digital signature on the challenge
+	- Alice computes H(challenge) to get the hash of the challenge
+	- Alice verifies if E(P_B, response) equals H(challenge)
+If the verification is successful, Alice can be reasonably confident that Bob has the private key S_B corresponding to the public key P_B in Cert_B.
+
+
+- Scenario 7:
+- Method 1: If Mal successfully creates a fake certificate with a public key that they control (P_Mal), they can send this certificate to Alice during communication, posing as Bob.
+- Method 2: Mal can perform a MitM attack by intercepting the communication between Alice and Bob and presenting their own certificate (Cert_Mal) to both parties.
+  When Alice requests Bob's certificate, Mal intercepts it, presents Cert_Mal, and forwards Bob's certificate to Bob. This way, both Alice and Bob believe they are communicating with each other securely. 
+
+
