@@ -1,0 +1,74 @@
+Ali Ramazani
+CS 338: Computer Security       
+Fall 2023
+
+Data Flow Diagram
+               
+               [Home Office]
+                  +-----+
+                  |     |
+                  | DB  |<--- Port 5432
+                  |     |
+                  +-----+
+                    ^
+                    |
+                    | HTTP/HTTPS
+                    |
+                  [Linode]
+                    / \
+                   /   \
+               Port 80  Port 443
+                  |     |
+                  |     |
+                [Web Server]
+                  /    \
+                 /      \
+                /        \
+        +------+          +------+
+        |                     |
+        |                     |
+     Web Client         iOS/Android
+       (Browsers)          Apps
+
+
+List of Threats and Mitigations (STRIDE):
+
+Spoofing (S):
+1. Threat: Attacker spoofing a user to gain unauthorized access.
+    - Mitigation: Implement strong authentication methods, such as multi-factor authentication (MFA).
+2. Threat: An attacker impersonating the Linode web server.
+    - Mitigation: Use SSL/TLS certificates for Linode web server authentication.
+
+Tampering (T):
+1. Threat: Data tampering during transmission between the web client and Linode server.
+    - Mitigation: Implement data integrity checks, like digital signatures, and use HTTPS.
+2. Threat: Unauthorized modification of user data in the database.
+    - Mitigation: Apply proper access controls and database integrity constraints.
+
+Repudiation (R):
+1. Threat: Users denying their actions on the Tapirs Unlimited platform.
+    - Mitigation: Implement comprehensive audit logging and ensure users cannot modify their logs.
+
+Information Disclosure (I):
+1. Threat: Exposure of user data in transit, e.g., chat logs or personal information.
+    - Mitigation: Encrypt data transmission with HTTPS, restrict access to sensitive data.
+2. Threat: Leaked user data from the database server.
+    - Mitigation: Regularly update database security, apply encryption, and access controls.
+
+Denial of Service (D):
+1. Threat: DDoS attacks on the Linode web server causing unavailability.
+    - Mitigation: Use anti-DDoS services, load balancing, and rate limiting.
+2. Threat: Service interruption due to an issue with the home office network.
+    - Mitigation: Implement redundancy and monitoring for the home network.
+
+Elevation of Privilege (E):
+1. Threat: Unauthorized escalation of privileges in the mobile apps.
+    - Mitigation: Apply the principle of least privilege and regular code audits.
+2. Threat: Exploiting vulnerabilities in the Linode server to gain unauthorized access.
+    - Mitigation: Regularly update server software, apply security patches, and use intrusion detection systems.
+
+Other:
+1. Threat: Social engineering attacks on users to reveal sensitive information.
+    - Mitigation: Educate users about security awareness and reporting procedures.
+2. Threat: Insider threats from employees having access to user data.
+    - Mitigation: Implement strict access controls, employee training, and regular security reviews.
