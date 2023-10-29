@@ -1,0 +1,17 @@
+Part 1
+Total time: 0m44.274s
+Number of hashes computed: 267,751
+Passwords cracked: 2,734
+Time per hash computed: 0.000165355125 seconds
+Time per password cracked: 0.01619385515 seconds
+Passwords cracked per number of hashes computed: 0.0102109796
+
+
+Part 2
+Total time: killed
+Number of hashes computed: 
+Passwords cracked: 
+Time per hash computed: 
+Time per password cracked: 
+Passwords cracked per number of hashes computed: 
+
