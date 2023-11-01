@@ -45,4 +45,25 @@ l. ARP cache:
 
 m. According to the ARP cache it will go to Kali MAC address.
 
-n. 
+o.  Yes,  I see an HTTP response on Metasploitable. 
+    From Kali I can observe all network traffic data between 
+    Metasploitable and cs338.jeffondich.com.
+
+p. Basically, the MAC address in Metasploitable’s ARP cache was changed to Kali's MAC Address.
+    When Metasploitable sent a request to cs338.jeffondich.com, it would first go to Kali.
+    Ettercap does this by manipulating ARP messages, causing devices to mistakenly send their data to the attacker,
+    who can then intercept and potentially manipulate the traffic between those devices.
+
+q. I would implement an ARP cache monitoring by continuously observing the ARP cache of my device. 
+    This helps in spotting any unusual changes, like having multiple MAC addresses linked to a single IP address. 
+    If I notice frequent modifications or new entries in the ARP cache, I'd consider it a potential sign of ARP spoofing.
+
+    In addition, I could also implement machine learning algorithms that can identify unusual patterns or behavior in the 
+    network and raise alerts if they deviate from the norm.
+
+
+
+
+
+
+
