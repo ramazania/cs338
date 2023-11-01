@@ -1,0 +1,48 @@
+Ali Ramazani
+CS 338
+Fall 2023
+
+--------------Execution----------------
+a. 00:0c:29:85:d4:8b
+b. 192.168.112.128
+c. 00:0c:29:c2:78:b8
+d. 192.168.112.129
+e. Kernel IP routing table:
+    Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
+    default         192.168.112.2   0.0.0.0         UG        0 0          0 eth0
+    192.168.112.0   0.0.0.0         255.255.255.0   U         0 0          0 eth0
+
+f. ARP cache:
+    Address                  HWtype  HWaddress           Flags Mask            Iface
+    192.168.112.254          ether   00:50:56:f0:7b:ff   C                     eth0
+    192.168.112.2            ether   00:50:56:e9:72:71   C                     eth0
+
+g. Kernel IP routing table:
+    Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
+    192.168.112.0   *               255.255.255.0   U         0 0          0 eth0
+    default         192.168.112.2   0.0.0.0         UG        0 0          0 eth0
+
+h. ARP cache:
+    Address                  HWtype  HWaddress           Flags Mask            Iface
+    192.168.112.254          ether   00:50:56:f0:7b:ff   C                     eth0
+    192.168.112.2            ether   00:50:56:e9:72:71   C                     eth0
+
+i. To initiate communication with an external host (http://cs338.jeffondich.com), 
+    Metasploitable should send the TCP SYN packet to its default gateway 
+    with IP address 192.168.112.254 and MAC address 00:50:56:f0:7b:ff, as listed in the ARP cache. 
+    The gateway will then handle routing the traffic to the external destination.
+
+j. Yes,  I see an HTTP response on Metasploitable. 
+    The wireshark on Kali linux captured 11 packets, which includes:
+    TCP handshake and HTTP request.
+
+l. ARP cache:
+    Address                  HWtype  HWaddress           Flags Mask            Iface
+    192.168.112.254          ether   00:0c:29:85:d4:8b   C                     eth0
+    192.168.112.2            ether   00:50:56:e9:72:71   C                     eth0
+
+    The MAC address is changed to 00:0c:29:85:d4:8b, which means that the traffic goes through Kali.
+
+m. According to the ARP cache it will go to Kali MAC address.
+
+n. 
