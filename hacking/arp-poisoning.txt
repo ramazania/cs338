@@ -62,8 +62,22 @@ q. I would implement an ARP cache monitoring by continuously observing the ARP c
     network and raise alerts if they deviate from the norm.
 
 
+--------------Synthesis----------------
 
+a.  Mal's strategy for intercepting the traffic between Alice and Bob revolves around exploiting the vulnerability of ARP cache poisoning.
+    This technique involves Mal sending forged ARP messages to Alice and Bob's devices, tricking them into associating Mal's MAC address with
+    their respective IP addresses. As a result, when Alice wants to communicate with Bob, her device is misled into sending the traffic to Mal's computer instead.
+    This allows Mal to intercept, analyze, and potentially manipulate the data passing between Alice and Bob, all without their knowledge. ARP cache poisoning is
+    a known security issue that underscores the importance of network security measures to detect and prevent such attacks, as it can lead to unauthorized access to
+    sensitive information and potentially malicious actions.
 
+b.  From Alice's perspective, ARP cache poisoning attacks are difficult to detect because they happen silently, without any visible signs or warnings.
+    To detect such attacks, Alice could use intrusion detection systems, ARP spoofing detection software, secure network configurations, and periodically
+    check her device's ARP cache for unusual entries. These measures can help her identify and mitigate the risk of ARP poisoning attacks.
 
+c.  Same as Alice's perspective. 
 
-
+d.  While HTTPS significantly enhances security and makes it much more difficult for attackers to manipulate data in transit, it's important to note that ARP cache poisoning
+    attacks can still potentially occur and lead to the interception of encrypted traffic. However, the attacker would not be able to decipher the encrypted content, 
+    and the browser would likely display warnings to Alice and Bob, which might prompt them to investigate further. For additional protection, network security measures should still
+    be implemented to detect and prevent ARP cache poisoning attacks.
