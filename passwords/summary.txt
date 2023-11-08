@@ -1,17 +1,65 @@
 Part 1
-Total time: 0m44.274s
-Number of hashes computed: 267,751
-Passwords cracked: 2,734
-Time per hash computed: 0.000165355125 seconds
-Time per password cracked: 0.01619385515 seconds
-Passwords cracked per number of hashes computed: 0.0102109796
+Total time: 45s
+Number of hashes computed: 267751
+Passwords cracked: 2734
+Time per hash computed: 0.000165355125 seconds per hash
+Time per password cracked: 0.01619385515 seconds per password
+Passwords cracked per number of hashes computed: 0.0102109796 passwords per hash
 
 
 Part 2
-Total time: killed
-Number of hashes computed: 
-Passwords cracked: 
-Time per hash computed: 
-Time per password cracked: 
-Passwords cracked per number of hashes computed: 
+Total time: 1h
+Number of hashes computed: 1131401702
+Passwords cracked: 50
+Time per hash computed: 0.00003182 seconds per hash
+Time per password cracked: 72 seconds per password
+Passwords cracked per number of hashes computed: 0.00000044 passwords per hash
 
+
+Part 3
+Total time: 20m
+Number of hashes computed: 731316066
+Passwords cracked: 2734
+Time per hash computed: 0.00000164 seconds per hash
+Time per password cracked: 0.439 seconds per password
+Passwords cracked per number of hashes computed: 0.00000374 passwords per hash
+
+
+
+Analysis:
+- Did your time per hash computed change between phases? By what factor? Why?
+    - yes, it decreased from phase1 to phase2 by a factor of 5 because the time and number of hashes computed increased drastically.
+
+- Did your time per password crack change between phases? By what factor? Why?
+    - yes, it increased by a factor of 4500 between phase1 and phase2. This is because I cracked less passwords for phase2 and it took longer. 
+
+- Suppose you wanted to precompute all the hashes for each possible password so you could just look up the password in a table indexed by the hash. How much memory would be required for each phase?
+    - Each hash string is 32 bytes long.
+    - Each password is 16 bytes long.
+    - Each mapping of a hash to a password takes up an additional 32 bytes.
+    - Total = 32 + 16 + 32 = 80 bytes
+   
+    -Phase1: 
+        - total words = 267751
+        - total storage = 80 * 267751 bytes = 21,420,080 bytes = 21MB
+    
+    -Phase2: 
+        - total words = 267751 * 267751
+        - total storage = 267751 * 267751 * 80 bytes = 5.7TB
+
+    -Phase3: 
+        - total words = 267751
+        - possible salts = 2805
+        - total storage = 267751 * 2805 * 80 bytes = 60GB
+
+- How well did hashcat or john do compared to your python program? Give details.
+    - I didn't try hashcat or john but I assume they are a lot faster than my python program.
+
+- Give 3-4 reasons we should store password hashes and not the passwords themselves. Think in terms of threats, who the attackers might be, etc.
+
+    1. Security in Data Breaches:
+        - Storing hashes safeguards user passwords in case of a data breach, preventing direct access by attackers.
+    2. Insider Threat Mitigation:
+        - Hashed passwords reduce the risk of insider abuse, as employees can't easily see or misuse plaintext passwords.
+    3. Protecting Against Password Reuse:
+        - Storing hashes makes it harder for attackers to reuse passwords across different services, enhancing overall security.
