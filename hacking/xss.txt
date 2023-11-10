@@ -1,0 +1,36 @@
+Ali Ramazani
+Computer Security
+Fall 2023
+
+Sources:
+1. https://jscrambler.com/blog/the-most-effective-way-to-protect-client-side-javascript-applications
+
+PART 1: COOKIES
+
+a) There is only one cookie. Name: theme     Value: default
+b) Yes, the theme changed to blue and the cookie value is blue. 
+c) Same result but different representatoin: theme=default. When the theme is changed to blue, it shows: theme=blue
+d) Yes, the blue theme is still selected.
+e) The URL changes to this: https://cs338.jeffondich.com/fdf/?theme=blue when I change the theme to blue. This means that the browser sends an HTTP request to the server which includes theme=blue.
+f) When the above html request is sent, then I assume some sort of javascript code is executed to change the theme to blue. 
+g) We can edit the value of the theme in the cookie to red or blue and then reload the page.
+h) We can use Burpsuite's proxy tool to intercept the http request sent from the browser, modify the cookie in the request, and then forward it to the server. 
+i) I use google chrome on windows 11 and this is what I found online: %LocalAppData%\Google\Chrome\User Data\Default\cookies.
+
+
+PART 2: CROSS-SITE SCRIPTING (XSS)
+
+a) step-by-step description of the nature and timing of Moriarty's attack on users of the FDF:
+    1. Make a post that has some javascript code.
+    2. When the user clicks something pops up immidiately.
+    3. Phising: The user's computer could get compromised if there was a malicoius maleware or unsecured link. 
+    4. The user panics when the warning messages in red color appear.
+    5. The user closes the browser and sometimes even turns off computer out of panic.
+
+b) When the user clicks on the post, the user could get sent to an unwanted site.
+
+c) When the user clicks on the post, a program is downloaded and when the user opens the program, it compromises the computer and steal data. 
+
+d) We can add runtime protection which:
+    "Runtime application Self-protection is a security technology that is built or linked into an application or application runtime environment 
+    and is capable of controlling application execution, detecting, and preventing real-time attacks."
